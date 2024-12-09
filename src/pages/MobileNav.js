@@ -21,7 +21,7 @@ const MobileNav = () => {
       {/* Navbar Header */}
       <div className="h-[60px] fixed bg-black w-screen text-white flex justify-between items-center z-50">
         <div className="ml-6">
-          <Link to="/" className="font-serif font-bold text-xl">
+          <Link to="/" className="font-serif font-semibold text-xl">
             PG
           </Link>
         </div>

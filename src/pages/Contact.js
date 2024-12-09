@@ -6,7 +6,7 @@ import { CiLocationOn } from "react-icons/ci";
 const Contact = () => {
   return (
     <motion.div
-      className="w-full h-fit p-20 max-lg:mt-10 "
+      className="w-full h-fit p-20 max-lg:px-10 max-lg:mt-10 "
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
@@ -26,7 +26,7 @@ const Contact = () => {
       </motion.div>
 
       <motion.div
-        className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-10"
+        className="grid grid-cols-1 md:grid-cols-2  gap-10 mt-10"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.2 }}

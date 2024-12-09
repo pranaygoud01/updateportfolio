@@ -1,19 +1,19 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Pranay's Portfolio",
+  "name": "Portfolio",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "https://i.pinimg.com/736x/64/1c/8a/641c8afef6e847e20e65e62809f78f5f.jpg",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "https://i.pinimg.com/736x/64/1c/8a/641c8afef6e847e20e65e62809f78f5f.jpg",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "https://i.pinimg.com/736x/64/1c/8a/641c8afef6e847e20e65e62809f78f5f.jpg",
       "type": "image/png",
       "sizes": "512x512"
     }

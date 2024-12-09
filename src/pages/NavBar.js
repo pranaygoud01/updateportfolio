@@ -36,7 +36,9 @@ const NavBar = () => {
     <div className="w-full h-full bg-black text-white p-8 md:p-16 flex flex-col items-center md:items-start max-md:hidden">
       {/* Logo */}
       <div>
-        <p className="font-serif text-2xl">PG</p>
+        <Link to="/" className="font-serif text-2xl">
+          PG
+        </Link>
       </div>
 
       {/* Menu Items */}
@@ -70,28 +72,28 @@ const NavBar = () => {
       >
         {[
           {
-            icon: FaLinkedinIn,
+            Icon: FaLinkedinIn,
             link: "https://www.linkedin.com/in/pranaygoud1229/",
           },
           {
-            icon: FaGithub,
+            Icon: FaGithub,
             link: "https://www.github.com/pranaygoud01",
           },
           {
-            icon: FaInstagram,
+            Icon: FaInstagram,
             link: "https://www.instagram.com/pranayygoud",
           },
-        ].map((Icon, index) => (
+        ].map((social, index) => (
           <motion.a
             key={index}
             className="text-base bg-white w-fit text-black p-2 rounded-full"
-            href={Icon.link}
+            href={social.link}
             target="_blank"
             rel="noreferrer"
             custom={index}
             variants={socialVariants}
           >
-            <Icon.icon />
+            <social.Icon />
           </motion.a>
         ))}
       </motion.div>

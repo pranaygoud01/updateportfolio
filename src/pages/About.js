@@ -11,7 +11,7 @@ import { BiSolidQuoteAltLeft } from "react-icons/bi";
 const About = () => {
   return (
     <>
-      <div className="w-full h-fit p-28">
+      <div className="w-full h-fit p-28 max-lg:px-10">
         <div>
           <motion.p
             className="text-sm font-semibold italic"
@@ -30,9 +30,9 @@ const About = () => {
             WELCOME TO...
           </motion.h1>
         </div>
-        <div className="flex gap-10">
+        <div className="flex max-lg:flex-col  gap-10">
           <motion.div
-            className="flex flex-col gap-3 w-[35%] items-center"
+            className="flex flex-col gap-3 w-[35%] max-lg:w-full items-center"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -59,12 +59,12 @@ const About = () => {
             </a>
           </motion.div>
           <motion.div
-            className="w-[55%]"
+            className="w-[55%] max-lg:w-full"
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
           >
-            <div className="grid grid-cols-2 gap-6 text-neutral-800 pb-10 border-b-2">
+            <div className="grid max-lg:grid-cols-1 grid-cols-2 gap-6 text-neutral-800 pb-10 border-b-2">
               <p className="flex gap-2 text-xs font-bold">
                 <IoCallOutline className="bg-slate-100 rounded-full text-3xl p-2" />
                 <span className="font-bold text-sm italic pt-1">
@@ -89,7 +89,7 @@ const About = () => {
               </p>
             </div>
             <motion.div
-              className="grid grid-cols-2 gap-5 pt-8 pb-24"
+              className="grid grid-cols-2 max-lg:grid-cols-1 gap-5 pt-8 pb-24"
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
@@ -104,7 +104,7 @@ const About = () => {
                     <br /> experience...
                   </p>
                 </div>
-                <p className="font-sans pt-5 text-sm w-9/12">
+                <p className="font-sans pt-5 text-sm w-9/12 max-lg:w-full">
                   Hello there! My name is Pranay Goud. I am a web designer &
                   developer, and I'm very passionate and dedicated to my work.
                 </p>
@@ -116,7 +116,7 @@ const About = () => {
                   </h1>
                   <p className="text-xs font-bold italic">Projects</p>
                 </div>
-                <p className="font-sans pt-5 text-sm w-9/12">
+                <p className="font-sans pt-5 text-sm w-9/12 max-lg:w-full">
                   I have done 10+ Projects using Latest Technologies. I have
                   acquired the skills and knowledge necessary to make your
                   project a success.
@@ -124,13 +124,13 @@ const About = () => {
               </div>
             </motion.div>
             <motion.div
-              className="h-[100px] bg-black text-white p-5 px-10 items-center flex gap-2"
+              className="h-[100px] bg-black text-white p-5 px-10 max-lg:px-3 items-center flex gap-2"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.6 }}
             >
-              <BiSolidQuoteAltLeft className="text-7xl text-neutral-400" />
-              <p className="text-base font-sans font-semibold">
+              <BiSolidQuoteAltLeft className="text-7xl max:lg:text-3xl text-neutral-400" />
+              <p className="text-base max-lg:text-sm font-sans font-semibold">
                 "Software engineering is not just about writing code. It's about
                 solving problems and making lives better."
               </p>
@@ -139,13 +139,13 @@ const About = () => {
         </div>
       </div>
       <motion.div
-        className="h-[400px] bg-gradient-to-r from-violet-500 via-red-500 to-yellow-500 text-white p-20"
+        className="h-fit bg-gradient-to-r from-violet-500 via-red-500 to-yellow-500 text-white p-20 max-lg:px-10"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
         <motion.div
-          className="grid grid-cols-2"
+          className="grid grid-cols-2 max-lg:grid-cols-1"
           initial="hidden"
           animate="visible"
           variants={{
@@ -182,7 +182,7 @@ const About = () => {
             </motion.a>
           </motion.div>
           <motion.div
-            className="flex flex-col gap-8"
+            className="flex flex-col gap-8 max-lg:mt-16"
             initial={{ x: 100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}

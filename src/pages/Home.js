@@ -31,7 +31,7 @@ const Home = () => {
 
   return (
     <motion.div
-      className="w-full h-screen p-8 md:p-20 lg:p-44 "
+      className="w-full h-fit max-lg:h-[80vh]  p-8 md:p-20 lg:p-44 max-lg:mt-20 max-lg:p-20 "
       initial="hidden"
       animate="visible"
     >

@@ -73,16 +73,16 @@ const Projects = () => {
   ];
 
   return (
-    <div className="w-full h-fit p-20">
+    <div className="w-full h-fit p-20 max-lg:mt-10 max-lg:px-10">
       <div>
         <h1 className="text-sm font-bold italic">Works</h1>
         <h1 className="font-bold text-3xl mt-3">FEATURED PROJECTS</h1>
       </div>
-      <div className="grid grid-cols-2 gap-10 mt-10">
+      <div className="grid grid-cols-2 max-lg:grid-cols-1 gap-10 mt-10">
         {projects.map((project, index) => (
           <motion.div
             key={index}
-            className="h-[300px] w-10/12 flex flex-col gap-4 p-4"
+            className="h-[300px] w-10/12 max-lg:w-full flex flex-col gap-4 p-4"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}

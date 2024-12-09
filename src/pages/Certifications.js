@@ -70,12 +70,12 @@ const Certifications = () => {
   ];
 
   return (
-    <div className="w-full h-fit p-20 bg-white">
+    <div className="w-full h-fit p-20 max-lg:px-10 bg-white max-lg:mt-10">
       <div>
         <h1 className="text-sm font-bold italic">Achievements</h1>
         <h1 className="font-bold text-3xl mt-3">CERTIFICATIONS</h1>
       </div>
-      <div className="grid grid-cols-2 gap-10 mt-10">
+      <div className="grid grid-cols-2 max-lg:grid-cols-1 gap-10 mt-10">
         {certificatesList.map((certificate, index) => (
           <motion.div
             key={certificate.id}

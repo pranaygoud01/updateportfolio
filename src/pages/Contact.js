@@ -6,7 +6,7 @@ import { CiLocationOn } from "react-icons/ci";
 const Contact = () => {
   return (
     <motion.div
-      className="w-full h-fit p-20 "
+      className="w-full h-fit p-20 max-lg:mt-10 "
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}

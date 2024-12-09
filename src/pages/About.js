@@ -163,7 +163,7 @@ const About = () => {
               <h1 className="italic text-sm font-semibold">Academics</h1>
               <h1 className="font-bold text-3xl">MY ACADEMICS</h1>
             </div>
-            <p className="w-6/12 text-sm pt-10">
+            <p className="w-6/12 max-lg:w-full text-sm pt-10">
               Hello there! My name is Pranay Goud. I am a web designer &
               developer, and I'm very passionate and dedicated to my work.
             </p>

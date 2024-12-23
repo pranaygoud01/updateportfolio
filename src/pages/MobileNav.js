@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { IoMenu, IoClose } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-
+import logo from "../assets/logo.png";
 const MobileNav = () => {
   const [open, setOpen] = useState(false);
 
@@ -19,36 +19,36 @@ const MobileNav = () => {
   return (
     <div className="flex flex-col relative">
       {/* Navbar Header */}
-      <div className="h-[60px] fixed bg-black w-screen text-white flex justify-between items-center z-50">
-        <div className="ml-6">
-          <Link to="/" className="font-serif font-semibold text-xl">
-            PG
+      <div className="h-[60px] fixed bg-neutral-950  w-screen  text-white flex justify-between items-center z-50">
+        <div className="h-[25px] w-[25px] ml-6">
+          <Link to="/" className="">
+            <img src={logo} className="h-full w-full object-cover" alt="logo" />
           </Link>
         </div>
         <button className="mr-6" onClick={() => setOpen(!open)}>
           {open ? (
-            <IoClose className="text-white text-4xl" />
+            <IoClose className=" text-4xl" />
           ) : (
-            <IoMenu className="text-white text-4xl" />
+            <IoMenu className="text-4xl" />
           )}
         </button>
       </div>
 
       {/* Navbar Menu */}
       <motion.div
-        className={`fixed top-0 left-0 w-screen h-screen bg-neutral-900 text-white z-40`}
+        className={`fixed top-0 left-0 w-screen h-fit bg-black text-white z-40`}
         initial={{ x: "100%" }}
         animate={{ x: open ? "0%" : "100%" }}
         exit={{ x: "100%" }}
         transition={{ type: "spring", stiffness: 100, damping: 15 }}
       >
-        <div className="flex flex-col text-white font-bold p-10 gap-8 pt-24">
+        <div className="flex flex-col   text-white font-bold p-10 gap-8 pt-24">
           {Menu.map((menu) => (
             <Link
               to={menu.path}
               key={menu.id}
               onClick={handleClose}
-              className="hover:text-gray-400 transition duration-200"
+              className="hover:text-gray-400  transition duration-200"
             >
               {menu.name}
             </Link>

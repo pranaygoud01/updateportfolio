@@ -2,7 +2,7 @@ import React from "react";
 import { FaLinkedinIn, FaGithub, FaInstagram } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { Link, useLocation } from "react-router-dom";
-
+import logo from "../assets/logo.png";
 const NavBar = () => {
   const location = useLocation();
 
@@ -35,9 +35,9 @@ const NavBar = () => {
   return (
     <div className="w-full h-full bg-black text-white p-8 md:p-16 flex flex-col items-center md:items-start max-md:hidden">
       {/* Logo */}
-      <div>
-        <Link to="/" className="font-serif text-2xl">
-          PG
+      <div className="h-[30px] w-[30px]">
+        <Link to="/" className="">
+          <img src={logo} className="h-full w-full object-cover" alt="logo" />
         </Link>
       </div>
 

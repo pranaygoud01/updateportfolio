@@ -5,6 +5,16 @@ import { motion } from "framer-motion";
 const Projects = () => {
   const projects = [
     {
+      title: "Stock Market Prediction",
+      tech: "Frontend",
+      description:
+        "A meticulously crafted responsive e-commerce website. Powered by ReactJS, styled with Tailwind CSS, and seamlessly navigated with React Router.",
+      github: "https://github.com/pranaygoud01/avion-app",
+      demo: "https://smartstocks.vercel.app/",
+      image:
+        "https://st5.depositphotos.com/68631180/69289/i/450/depositphotos_692899206-stock-photo-stock-price-chart-graph-background.jpg",
+    },
+    {
       title: "Avion",
       tech: "Frontend",
       description:
@@ -51,7 +61,7 @@ const Projects = () => {
       tech: "Frontend and API",
       demo: "https://newsapi-app.netlify.app/",
       image:
-        "https://media.istockphoto.com/id/929047972/vector/world-news-flat-vector-icon-news-symbol-logo-illustration-business-concept-simple-flat.jpg?s=612x612&w=0&k=20&c=5jpcJ7xejjFa2qKCzeOXKJGeUl7KZi9qoojZj1Kq_po=",
+        "https://img.freepik.com/free-vector/gradient-breaking-news-logo-design_23-2151173052.jpg?t=st=1734940682~exp=1734944282~hmac=1c4c227deac12b9d06a43571baaae402a90d5e54835226c9699f406e02dfe8e5&w=996",
     },
     {
       title: "Placement Management System",
@@ -82,14 +92,14 @@ const Projects = () => {
         {projects.map((project, index) => (
           <motion.div
             key={index}
-            className="h-[300px] w-10/12 max-lg:w-full flex flex-col gap-4 p-4"
+            className="h-[300px]  w-10/12 max-lg:w-full flex flex-col max-lg:bg-neutral-50  max-lg:rounded-sm gap-4 max-lg:gap-10 p-4"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: index * 0.2 }}
           >
-            <div className="flex h-full gap-4">
-              <div className="w-[40%] ">
+            <div className="flex flex-col h-full gap-4">
+              <div className="w-[40%] max-lg:w-full">
                 <h1 className="text-xs font-bold italic">{project.tech}</h1>
                 <h1 className="text-2xl font-bold">{project.title}</h1>
                 <div className="flex justify-start items-start mt-auto">
@@ -104,10 +114,10 @@ const Projects = () => {
                   </a>
                 </div>
               </div>
-              <div className="w-[60%]">
+              <div className="w-[60%] max-lg:h-[200px]  max-lg:w-full ">
                 <img
                   src={project.image}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full  object-cover"
                   alt={project.image}
                 />
               </div>

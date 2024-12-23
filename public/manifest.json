@@ -3,17 +3,17 @@
   "name": "Portfolio",
   "icons": [
     {
-      "src": "https://i.pinimg.com/736x/64/1c/8a/641c8afef6e847e20e65e62809f78f5f.jpg",
+      "src": "logo.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "https://i.pinimg.com/736x/64/1c/8a/641c8afef6e847e20e65e62809f78f5f.jpg",
+      "src": "logo.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "https://i.pinimg.com/736x/64/1c/8a/641c8afef6e847e20e65e62809f78f5f.jpg",
+      "src": "logo.png",
       "type": "image/png",
       "sizes": "512x512"
     }

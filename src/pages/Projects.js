@@ -98,7 +98,7 @@ const Projects = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: index * 0.2 }}
           >
-            <div className="flex flex-col h-full gap-4">
+            <div className="flex max-lg:flex-col h-full gap-4">
               <div className="w-[40%] max-lg:w-full">
                 <h1 className="text-xs font-bold italic">{project.tech}</h1>
                 <h1 className="text-2xl font-bold">{project.title}</h1>

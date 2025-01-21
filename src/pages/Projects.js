@@ -5,6 +5,16 @@ import { motion } from "framer-motion";
 const Projects = () => {
   const projects = [
     {
+      title: "Expense Tracker",
+      tech: "React & Context API",
+      description:
+        "A meticulously crafted responsive e-commerce website. Powered by ReactJS, styled with Tailwind CSS, and seamlessly navigated with React Router.",
+      github: "https://github.com/pranaygoud01/ExpenseTracker-ContextAPI",
+      demo: "https://expense-tracker-pranay.vercel.app/",
+      image:
+        "https://file.aiquickdraw.com/imgcompressed/img/compressed_054c46e219b98b566cd4cb22af8c348e.webp",
+    },
+    {
       title: "Stock Market Prediction",
       tech: "Frontend",
       description:

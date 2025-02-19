@@ -33,7 +33,7 @@ const NavBar = () => {
   };
 
   return (
-    <div className="w-full h-full bg-black text-white p-8 md:p-16 flex flex-col items-center md:items-start max-md:hidden">
+    <div className="w-fit  h-fit fixed top-0 left-0 bg-black text-white p-8 md:p-20 flex flex-col items-center md:items-start max-md:hidden z-50">
       {/* Logo */}
       <div className="h-[30px] w-[30px]">
         <Link to="/" className="">
